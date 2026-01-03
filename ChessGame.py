@@ -12,7 +12,7 @@ import time
 import random
 
 
-
+CHESS_PIECE_SUBFOLDER = "ChessPieces"
 
 
 
@@ -43,21 +43,21 @@ clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 36)
 
 White_Piece_icons = {
-    'pawn': pygame.image.load('white_pawn.png').convert_alpha(),
-    'knight': pygame.image.load('white_knight.png').convert_alpha(),
-    'bishop': pygame.image.load('white_bishop.png').convert_alpha(),
-    'rook': pygame.image.load('white_rook.png').convert_alpha(),
-    'queen': pygame.image.load('white_queen.png').convert_alpha(),
-    'king': pygame.image.load('white_king.png').convert_alpha()
+    'pawn': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/white_pawn.png').convert_alpha(),
+    'knight': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/white_knight.png').convert_alpha(),
+    'bishop': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/white_bishop.png').convert_alpha(),
+    'rook': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/white_rook.png').convert_alpha(),
+    'queen': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/white_queen.png').convert_alpha(),
+    'king': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/white_king.png').convert_alpha()
 }
 
 Black_Piece_icons = {
-    'pawn': pygame.image.load('black_pawn.png').convert_alpha(),
-    'rook': pygame.image.load('black_rook.png').convert_alpha(),
-    'knight': pygame.image.load('black_knight.png').convert_alpha(),
-    'queen': pygame.image.load('black_queen.png').convert_alpha(),
-    'king': pygame.image.load('black_king.png').convert_alpha(),
-    'bishop': pygame.image.load('black_bishop.png').convert_alpha()
+    'pawn': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/black_pawn.png').convert_alpha(),
+    'rook': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/black_rook.png').convert_alpha(),
+    'knight': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/black_knight.png').convert_alpha(),
+    'queen': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/black_queen.png').convert_alpha(),
+    'king': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/black_king.png').convert_alpha(),
+    'bishop': pygame.image.load(f'{CHESS_PIECE_SUBFOLDER}/black_bishop.png').convert_alpha()
 }
 
 start_time = time.time()
